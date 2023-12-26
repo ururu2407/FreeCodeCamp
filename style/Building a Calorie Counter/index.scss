@@ -1,0 +1,84 @@
+@import '../config';
+
+body {
+
+    #building-calorie-counter {
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+
+        .container,
+        .output {
+            margin: 20px auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 680px;
+
+            #calorie-counter {
+
+                label,
+                legend {
+                    font-weight: bold;
+                }
+
+                .input-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                button {
+                    outline: none;
+                    cursor: pointer;
+                    text-decoration: none;
+                    background-color: $light-yellow;
+                    border: 2px solid $dark-yellow;
+                }
+
+                .clear {
+                    background-color: $light-pink;
+                    color: $dark-red;
+                    border-color: $dark-red;
+                }
+
+                button,
+                input,
+                select {
+                    min-height: 24px;
+                    color: $dark-blue;
+                }
+
+                fieldset,
+                label,
+                button,
+                input,
+                select {
+                    margin-bottom: 10px;
+                }
+
+                .output {
+                    border: 2px solid $light-grey;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                .hide {
+                    display: none;
+                }
+
+                .output span {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+
+                .surplus {
+                    color: $light-green;
+                }
+
+                .deficit {
+                    color: $light-pink;
+                }
+            }
+        }
+    }
+}

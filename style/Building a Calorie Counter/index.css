@@ -1,0 +1,71 @@
+body {
+  background-color: #1b1b32;
+  color: #f5f6f7;
+}
+body h1 {
+  text-align: center;
+}
+
+body #building-calorie-counter {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+body #building-calorie-counter .container,
+body #building-calorie-counter .output {
+  margin: 20px auto;
+}
+body #building-calorie-counter .container {
+  width: 90%;
+  max-width: 680px;
+}
+body #building-calorie-counter .container #calorie-counter label,
+body #building-calorie-counter .container #calorie-counter legend {
+  font-weight: bold;
+}
+body #building-calorie-counter .container #calorie-counter .input-container {
+  display: flex;
+  flex-direction: column;
+}
+body #building-calorie-counter .container #calorie-counter button {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fecc4c;
+  border: 2px solid #feac32;
+}
+body #building-calorie-counter .container #calorie-counter .clear {
+  background-color: #ffadad;
+  color: #850000;
+  border-color: #850000;
+}
+body #building-calorie-counter .container #calorie-counter button,
+body #building-calorie-counter .container #calorie-counter input,
+body #building-calorie-counter .container #calorie-counter select {
+  min-height: 24px;
+  color: #0a0a23;
+}
+body #building-calorie-counter .container #calorie-counter fieldset,
+body #building-calorie-counter .container #calorie-counter label,
+body #building-calorie-counter .container #calorie-counter button,
+body #building-calorie-counter .container #calorie-counter input,
+body #building-calorie-counter .container #calorie-counter select {
+  margin-bottom: 10px;
+}
+body #building-calorie-counter .container #calorie-counter .output {
+  border: 2px solid #f5f6f7;
+  padding: 10px;
+  text-align: center;
+}
+body #building-calorie-counter .container #calorie-counter .hide {
+  display: none;
+}
+body #building-calorie-counter .container #calorie-counter .output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+body #building-calorie-counter .container #calorie-counter .surplus {
+  color: #acd157;
+}
+body #building-calorie-counter .container #calorie-counter .deficit {
+  color: #ffadad;
+}/*# sourceMappingURL=index.css.map */
