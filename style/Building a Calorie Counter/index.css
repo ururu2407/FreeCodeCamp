@@ -10,6 +10,7 @@ body #building-calorie-counter {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
 }
+body #building-calorie-counter h1,
 body #building-calorie-counter .container,
 body #building-calorie-counter .output {
   margin: 20px auto;
@@ -17,6 +18,24 @@ body #building-calorie-counter .output {
 body #building-calorie-counter .container {
   width: 90%;
   max-width: 680px;
+}
+body #building-calorie-counter .container .output {
+  border: 2px solid #f5f6f7;
+  padding: 10px;
+  text-align: center;
+}
+body #building-calorie-counter .container .output .surplus {
+  color: #acd157;
+}
+body #building-calorie-counter .container .output .deficit {
+  color: #ffadad;
+}
+body #building-calorie-counter .container .output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+body #building-calorie-counter .container .hide {
+  display: none;
 }
 body #building-calorie-counter .container #calorie-counter label,
 body #building-calorie-counter .container #calorie-counter legend {
@@ -50,22 +69,4 @@ body #building-calorie-counter .container #calorie-counter button,
 body #building-calorie-counter .container #calorie-counter input,
 body #building-calorie-counter .container #calorie-counter select {
   margin-bottom: 10px;
-}
-body #building-calorie-counter .container #calorie-counter .output {
-  border: 2px solid #f5f6f7;
-  padding: 10px;
-  text-align: center;
-}
-body #building-calorie-counter .container #calorie-counter .hide {
-  display: none;
-}
-body #building-calorie-counter .container #calorie-counter .output span {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-body #building-calorie-counter .container #calorie-counter .surplus {
-  color: #acd157;
-}
-body #building-calorie-counter .container #calorie-counter .deficit {
-  color: #ffadad;
 }/*# sourceMappingURL=index.css.map */
