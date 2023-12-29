@@ -1,0 +1,112 @@
+@media screen and (max-width: 700px) {
+    body {
+        #building-music-player {
+
+            .container {
+
+                .player,
+                .playlist {
+                    width: 300px;
+
+                    h1 {
+                        font-size: 0.813rem;
+                    }
+
+                    h2 {
+                        font-size: 0.75rem;
+                    }
+
+                    .player-bar,
+                    .playlist-bar,
+                    .player-content,
+                    #playlist-songs {
+                        width: 280px;
+                    }
+                }
+
+                .player {
+                    height: 340px;
+
+                    .player-content {
+                        display: inline;
+                        position: relative;
+                        justify-items: center;
+                        height: 100%;
+
+                        #player-album-art {
+                            z-index: -100;
+                            height: 280px;
+                            box-shadow: none;
+                            background: #000;
+                        }
+
+                        #player-album-art img {
+                            width: 100%;
+                            opacity: 0.6;
+                        }
+
+                        .player-display {
+                            position: absolute;
+                            width: 100%;
+                            z-index: 1000;
+                            background-color: transparent;
+                            top: 0;
+                            height: 280px;
+                            justify-content: space-between;
+                            text-align: center;
+
+                            .player-display-song-artist {
+                                padding: 0 10px;
+                            }
+
+                            .player-display-song-artist>p {
+                                white-space: pre-wrap;
+                            }
+                        }
+                    }
+                }
+
+                .playlist {
+                    #playlist-songs::-webkit-scrollbar {
+                        width: 5px;
+                    }
+
+                    #playlist-songs::-webkit-scrollbar-track {
+                        background: $fcc-blue;
+                    }
+
+                    #playlist-songs::-webkit-scrollbar-thumb {
+                        background: $secondary-color;
+                    }
+
+                    #playlist-songs {
+                        height: 280px;
+                        padding: 5px 6px;
+                        overflow-y: scroll;
+                        overflow-x: hidden;
+                        scrollbar-color: $fcc-blue $secondary-color;
+                        scrollbar-width: thin;
+
+                        .playlist-song {
+                            justify-content: space-between;
+
+                            .playlist-song-info {
+                                .playlist-song-title {
+                                    width: 140px;
+                                }
+
+                                .playlist-song-artist {
+                                    width: 40px;
+                                }
+
+                                .playlist-song-duration>button {
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

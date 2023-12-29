@@ -1,0 +1,251 @@
+@import '../config';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+
+    #building-music-player {
+
+
+        .container {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 5px;
+
+            [aria-current="true"] {
+                background-color: $fcc-blue;
+            }
+
+            [aria-current="true"] p {
+                color: $light-yellow;
+            }
+
+            .player,
+            .playlist {
+                width: 450px;
+                background-color: $fcc-blue;
+                border: 3px solid $foreground-color;
+
+                button {
+                    background: transparent;
+                    border: none;
+                    color: $light-grey;
+                    cursor: pointer;
+                    font-size: $font-size-base;
+                    outline-color: $light-yellow;
+                    text-align: center;
+                }
+
+                .player-bar,
+                .playlist-bar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 5px;
+                    width: 100%;
+                    height: 30px;
+                    background-color: $foreground-color;
+                }
+
+                .parallel-lines {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 6px;
+                    padding: 0 5px;
+                }
+
+                .parallel-lines>div {
+                    height: 2px;
+                    width: 100%;
+                    min-width: 75px;
+                    background-color: $light-yellow;
+                }
+
+                .fcc-title,
+                .playlist-title {
+                    color: $secondary-color;
+                    margin: 0 10px;
+                    font-family: $font-headline;
+                }
+
+                button:focus,
+                .playlist-song:focus {
+                    outline-style: dashed;
+                    outline-width: 2px;
+                }
+
+                h1 {
+                    font-size: 1.125rem;
+                    line-height: 1.6;
+                }
+
+                h2 {
+                    font-size: $font-size-base;
+                }
+            }
+
+            .player {
+                height: 260px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+
+                .player-content {
+                    display: flex;
+                    background-color: $foreground-color;
+                    width: 430px;
+                    height: 200px;
+                    column-gap: 13px;
+                    align-items: center;
+                    justify-content: center;
+
+                    #player-album-art {
+                        background-color: $secondary-color;
+                        border: 6px solid $fcc-blue;
+                    }
+
+                    #player-album-art img {
+                        width: 150px;
+                        display: block;
+                    }
+
+                    .player-display {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 20px;
+                        padding: 14px;
+                        background-color: $fcc-blue;
+                        height: 153px;
+                        width: 226px;
+
+                        .player-display-song-artist {
+                            height: 80px;
+
+                            #player-song-title,
+                            #player-song-artist {
+                                margin: 0;
+                            }
+
+                            #player-song-artist {
+                                color: $light-yellow;
+                                font-size: 0.75rem;
+                            }
+
+                            #player-song-title {
+                                font-size: 1.125rem;
+                            }
+                        }
+
+                        .player-buttons {
+                            display: flex;
+                            justify-content: space-around;
+
+                            svg {
+                                fill: $light-grey;
+                            }
+
+                            .playing>svg {
+                                fill: $light-yellow;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .playlist {
+                height: auto;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+
+                ul {
+                    margin: 0;
+
+                    li:not(:last-child) {
+                        border-bottom: 1px solid $fcc-blue;
+                    }
+                }
+
+                #playlist-songs {
+                    width: 430px;
+                    height: 100%;
+                    background-color: $foreground-color;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+                    padding: 8px 9px;
+                    visibility: visible;
+                    justify-content: start;
+                    list-style: none;
+
+                    .playlist-song {
+                        outline-color: $light-yellow;
+                        display: flex;
+                        height: 55px;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 5px;
+
+                        .playlist-song-info {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-around;
+                            column-gap: 7px;
+                            padding: 5px 0;
+                            font-family: $font-family;
+
+                            .playlist-song-title {
+                                font-size: 0.85rem;
+                                width: 241px;
+                                text-align: left;
+                            }
+
+                            .playlist-song-artist {
+                                font-size: 0.725rem;
+                                width: 80px;
+                            }
+
+                            .playlist-song-duration {
+                                font-size: 0.725rem;
+                                margin: auto;
+                                font-family: $font-headline;
+                                width: 30px;
+                            }
+                        }
+
+                        .playlist-song-delete {
+                            padding: 0;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        .playlist-song-delete,
+                        .playlist-song-delete {
+                            fill: $foreground-color;
+                        }
+
+                        .playlist-song-delete:hover circle,
+                        .playlist-song-delete:focus circle {
+                            fill: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive'
