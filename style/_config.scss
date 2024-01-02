@@ -5,6 +5,7 @@ $dark-blue: #0a0a23;
 $fcc-blue: #1b1b32;
 $foreground-color: #3b3b4f;
 $light-yellow: #fecc4c;
+$yellow: #f1be32;
 $dark-yellow: #feac32;
 $light-pink: #ffadad;
 $dark-red: #850000;
@@ -18,12 +19,16 @@ $font-headline: "Roboto Mono", monospace;
 $font-family: "Lato", sans-serif;
 
 body {
-    background-color: $fcc-blue;
+    background-color: $dark-blue;
     color: $light-grey;
     font-family: $font-family;
     font-size: $font-size-base;
 
     h1 {
         text-align: center;
+    }
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

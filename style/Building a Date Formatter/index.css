@@ -1,0 +1,94 @@
+body {
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body h1 {
+  text-align: center;
+}
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body #building-date-formatter *,
+body #building-date-formatter *::before,
+body #building-date-formatter *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body #building-date-formatter .title-container {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+body #building-date-formatter .title-container .title {
+  font-size: 2.5rem;
+}
+body #building-date-formatter .title-container .date-svg {
+  width: 30px;
+  height: 30px;
+}
+body #building-date-formatter .divider {
+  margin: auto;
+  width: 150px;
+  height: 10px;
+  background-color: #f1be32;
+}
+body #building-date-formatter .dropdown-container {
+  width: 50%;
+  margin: 40px auto;
+  position: relative;
+}
+body #building-date-formatter .dropdown-container select {
+  display: block;
+  margin: 20px auto 0;
+  width: 100%;
+  height: 50px;
+  font-size: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  color: #0a0a23;
+  appearance: none;
+  padding: 10px;
+  padding-right: 38px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+body #building-date-formatter .dropdown-container .select-icon {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 30px;
+  height: 36px;
+  pointer-events: none;
+  padding-left: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+body #building-date-formatter .dropdown-container .select-icon .icon {
+  transition: fill 0.3s ease;
+  fill: #0a0a23;
+}
+body #building-date-formatter #current-date {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  body #building-date-formatter .title-container .title {
+    font-size: 2rem;
+  }
+  body #building-date-formatter .title-container .date-svg {
+    display: none;
+  }
+  body #building-date-formatter .dropdown-container {
+    width: 80%;
+  }
+}/*# sourceMappingURL=index.css.map */

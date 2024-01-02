@@ -1,15 +1,16 @@
 @import '../config';
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+
 
 body {
 
     #building-music-player {
 
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
 
         .container {
             margin-top: 10px;

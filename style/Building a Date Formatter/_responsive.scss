@@ -1,0 +1,19 @@
+@media screen and (max-width: 375px) {
+    body {
+        #building-date-formatter {
+            .title-container {
+                .title {
+                    font-size: 2rem;
+                }
+
+                .date-svg {
+                    display: none;
+                }
+            }
+
+            .dropdown-container {
+                width: 80%;
+            }
+        }
+    }
+}

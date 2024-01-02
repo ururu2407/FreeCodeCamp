@@ -1,5 +1,5 @@
 body {
-  background-color: #1b1b32;
+  background-color: #0a0a23;
   color: #f5f6f7;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -7,13 +7,16 @@ body {
 body h1 {
   text-align: center;
 }
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+body #building-music-player *,
+body #building-music-player *::after,
+body #building-music-player *::before {
+  box-sizing: border-box;
+}
 body #building-music-player .container {
   margin-top: 10px;
   display: flex;
