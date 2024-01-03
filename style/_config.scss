@@ -10,6 +10,9 @@ $dark-yellow: #feac32;
 $light-pink: #ffadad;
 $dark-red: #850000;
 $light-green: #acd157;
+$blue: #002ead;
+$purple: #5a01a7;
+$black-green: #00471b;
 
 // font sizes
 $font-size-base: 16px;
@@ -24,11 +27,17 @@ body {
     font-family: $font-family;
     font-size: $font-size-base;
 
+
     h1 {
         text-align: center;
     }
+
     hr {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 200px;
     }
 }

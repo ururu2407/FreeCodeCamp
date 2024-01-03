@@ -1,0 +1,96 @@
+body {
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body h1 {
+  text-align: center;
+}
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body footer {
+  margin-top: 200px;
+}
+
+body #build-palindrome-checker .container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #build-palindrome-checker .container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+body #build-palindrome-checker .container .check-pld {
+  width: min(100vw, 410px);
+  min-height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #f5f6f7;
+  color: #0a0a23;
+  box-shadow: 0 6px 6px #002ead;
+}
+body #build-palindrome-checker .container .check-pld label {
+  color: #0a0a23;
+  margin-bottom: 20px;
+}
+body #build-palindrome-checker .container .check-pld .input-pld {
+  background-color: #f5f6f7;
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #5a01a7;
+  outline: none;
+}
+body #build-palindrome-checker .container .check-pld .btn-pld {
+  width: 90px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #5a01a7;
+  color: #fff;
+  cursor: pointer;
+}
+body #build-palindrome-checker .container .check-pld .results {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: black;
+}
+body #build-palindrome-checker .container .check-pld .results .result-text {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  text-align: center;
+}
+body #build-palindrome-checker .container .explanation {
+  width: min(100vw, 410px);
+  font-size: 1.3rem;
+  min-height: 140px;
+  background-color: #00471b;
+  margin-top: 20px;
+  padding: 1px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #build-palindrome-checker .container .explanation .pld-explanation {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}/*# sourceMappingURL=index.css.map */

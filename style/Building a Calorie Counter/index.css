@@ -11,6 +11,9 @@ body hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+body footer {
+  margin-top: 200px;
+}
 
 body #building-calorie-counter {
   font-family: "Lato", Helvetica, Arial, sans-serif;
