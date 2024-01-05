@@ -4,16 +4,16 @@ const dateOptionsSelectElement = document.getElementById("date-options");
 const date = new Date();
 const day = date.getDate();
 const month = date.getMonth() + 1;
-const year = date.getFullYear();
+const years = date.getFullYear();
 const hours = date.getHours();
 const minutes = date.getMinutes();
 
-const formattedDate = `${day}-${month}-${year}`;
+const formattedDate = `${day}-${month}-${years}`;
 currentDateParagraph.textContent = formattedDate;
 
-dateOptionsSelectElement.addEventListener("change", () => {
+dateOptionsSelectElement.addEventListener("change", (e) => {
 
-  switch (dateOptionsSelectElement.value) {
+  switch (e.target.value) {
     case "yyyy-mm-dd":
       currentDateParagraph.textContent = formattedDate
         .split("-")
@@ -21,7 +21,7 @@ dateOptionsSelectElement.addEventListener("change", () => {
         .join("-");
       break;
     case "mm-dd-yyyy-h-mm":
-      currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
+      currentDateParagraph.textContent = `${month}-${day}-${years} ${hours} Hours ${minutes} Minutes`;
       break;
     default:
       currentDateParagraph.textContent = formattedDate;

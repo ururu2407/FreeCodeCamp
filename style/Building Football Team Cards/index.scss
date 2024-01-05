@@ -1,0 +1,69 @@
+@import '../config';
+
+body {
+    #building-football-team-cards {
+        text-align: center;
+        padding: 10px;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title,
+        .options-label,
+        .team-stats {
+            color: $secondary-color;
+        }
+
+        .title {
+            margin: 1.3rem 0;
+        }
+
+        section {
+            .team-stats {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                font-size: 1.3rem;
+                margin: 1.2rem 0;
+            }
+
+            .options-label {
+                font-size: 1.2rem;
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                .player-card {
+                    background-color: $light-grey;
+                    color: $fcc-blue;
+                    padding: 1.3rem;
+                    margin: 1.2rem;
+                    width: 300px;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        #building-football-team-cards {
+            section {
+                .team-stats{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
