@@ -1,0 +1,33 @@
+@media (min-width: 576px) {
+    body {
+        #building-todo-app {
+            .todo-app {
+                width: 400px;
+                height: 440px;
+
+                .task-form {
+                    width: 400px;
+                    height: 450px;
+
+                    .task-form-body {
+                        .task-form-label {
+                            font-size: 1.5rem;
+                        }
+
+                        #title-input,
+                        #date-input {
+                            height: 2rem;
+                        }
+
+                        #title-input,
+                        #date-input,
+                        #description-input {
+                            padding: 5px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
