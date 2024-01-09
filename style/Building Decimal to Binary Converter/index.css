@@ -1,0 +1,80 @@
+body {
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body h1 {
+  text-align: center;
+}
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body footer {
+  margin-top: 300px;
+}
+
+body #building-decimal-to-binary {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+}
+body #building-decimal-to-binary *,
+body #building-decimal-to-binary *::before,
+body #building-decimal-to-binary *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body #building-decimal-to-binary .dcm-input-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+body #building-decimal-to-binary .dcm-input-container .number-input {
+  height: 25px;
+}
+body #building-decimal-to-binary .dcm-input-container .convert-btn {
+  background-color: #f1be32;
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+}
+body #building-decimal-to-binary #result {
+  margin: 10px 0;
+  min-width: 200px;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid #f1be32;
+  font-size: 2rem;
+  text-align: center;
+}
+body #building-decimal-to-binary #animation-container {
+  max-width: 300px;
+}
+body #building-decimal-to-binary #animation-container .animation-frame {
+  padding: 15px 10px;
+  border: 5px solid #f1be32;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  body #building-decimal-to-binary .dcm-input-container {
+    flex-direction: row;
+  }
+  body #building-decimal-to-binary #result {
+    max-width: 460px;
+  }
+}/*# sourceMappingURL=index.css.map */

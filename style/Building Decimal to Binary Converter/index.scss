@@ -1,0 +1,81 @@
+@import '../config';
+
+body {
+    #building-decimal-to-binary {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dcm-input-container {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+            .number-input {
+                height: 25px;
+            }
+
+            .convert-btn {
+                background-color: $yellow;
+                cursor: pointer;
+                border: none;
+                padding: 4px;
+            }
+        }
+
+        #result {
+            margin: 10px 0;
+            min-width: 200px;
+            width: fit-content;
+            min-height: 80px;
+            word-break: break-word;
+            padding: 15px;
+            border: 5px solid $yellow;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        #animation-container {
+            max-width: 300px;
+
+            .animation-frame {
+                padding: 15px 10px;
+                border: 5px solid $yellow;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 500px) {
+    body {
+        #building-decimal-to-binary {
+            .dcm-input-container {
+                flex-direction: row;
+            }
+
+            #result {
+                max-width: 460px;
+            }
+        }
+    }
+}

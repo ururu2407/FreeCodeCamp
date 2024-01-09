@@ -1,6 +1,6 @@
 const inputText = document.getElementById('text-input');
 const buttonCheck = document.getElementById('check-btn');
-const result = document.getElementById('result');
+const result = document.getElementById('pld-result');
 
 const checkPalindrome = (input) => {
     const original = input;
