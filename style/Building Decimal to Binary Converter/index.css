@@ -42,7 +42,7 @@ body #building-decimal-to-binary .dcm-input-container {
 body #building-decimal-to-binary .dcm-input-container .number-input {
   height: 25px;
 }
-body #building-decimal-to-binary .dcm-input-container .convert-btn {
+body #building-decimal-to-binary .dcm-input-container .converter-btn {
   background-color: #f1be32;
   cursor: pointer;
   border: none;
