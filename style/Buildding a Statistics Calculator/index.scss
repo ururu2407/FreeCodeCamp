@@ -1,0 +1,32 @@
+@import '../config';
+
+body {
+    #building-statistics-calculator {
+        margin: 0;
+        text-align: center;
+        color: $secondary-color;
+
+        button {
+            cursor: pointer;
+            background-color: $foreground-color;
+            border: 1px solid $secondary-color;
+            padding: 5px;
+            color: $secondary-color;
+        }
+
+        input {
+            background-color: $dark-blue;
+            padding: 5px;
+            color: $secondary-color;
+            border: 1px solid $foreground-color;
+        }
+
+        p {
+            margin: 16px 0;
+
+            &.bold {
+                font-weight: bold;
+            }
+        }
+    }
+}
