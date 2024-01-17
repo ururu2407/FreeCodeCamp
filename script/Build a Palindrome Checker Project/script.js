@@ -1,6 +1,6 @@
 const inputText = document.getElementById('text-input');
 const buttonCheck = document.getElementById('check-btn');
-const result = document.getElementById('pld-result');
+const resultPLD = document.getElementById('pld-result');
 
 const checkPalindrome = (input) => {
     const original = input;
@@ -9,7 +9,7 @@ const checkPalindrome = (input) => {
         return
     }
 
-    result.replaceChildren()
+    resultPLD.replaceChildren()
     const changedStr = input.replace(/\W|_/g, '',).toLowerCase();
     let resultText
     if (changedStr === [...changedStr].reverse().join('')) {
@@ -20,7 +20,7 @@ const checkPalindrome = (input) => {
     const p = document.createElement('p')
     p.className = 'result-text'
     p.innerHTML = resultText
-    result.appendChild(p);
+    resultPLD.appendChild(p);
 }
 buttonCheck.addEventListener("click", () => {
     checkPalindrome(inputText.value)

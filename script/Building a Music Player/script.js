@@ -173,9 +173,7 @@ const deleteSong = (id) => {
       setPlayButtonAccessibleText();
       resetButton.remove();
     });
-
   }
-
 };
 
 const setPlayerDisplay = () => {

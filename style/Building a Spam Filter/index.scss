@@ -1,0 +1,66 @@
+@import '../config';
+
+body {
+    #building-spam-filter {
+        text-align: center;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-text {
+            margin: 25px 0;
+
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .description {
+                margin-top: 15px;
+                font-size: 1.4rem;
+            }
+        }
+
+        .main {
+            .message-label {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+            }
+
+            #message-input {
+                max-width: 90%;
+                font-size: 1.1rem;
+
+                &placeholder-shown {
+                    text-align: center;
+                }
+            }
+
+            .btn {
+                display: block;
+                cursor: pointer;
+                width: 200px;
+                margin: 10px auto;
+                color: $dark-blue;
+                background-color: $dark-yellow;
+                background-image: linear-gradient(light-yellow, $orange);
+                border-color: $dark-yellow;
+                border-width: 3px;
+
+                &:hover {
+                    background-image: linear-gradient($yellow, $dark-orange);
+                }
+            }
+
+            #result {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+        }
+    }
+}

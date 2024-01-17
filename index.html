@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style/Building a Number Sorter/index.css">
     <link rel="stylesheet" href="./style/Buildding a Statistics Calculator/index.css">
     <link rel="stylesheet" href="./style/Building a Spreadsheet/index.css">
+    <link rel="stylesheet" href="./style/Building a Spam Filter/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
     <title>FreeCodeCamp</title>
@@ -52,7 +53,7 @@
     </div>
 
     <hr>
-    
+
     <!-- BUILDING a CALORIE COUNTER -->
 
     <div id="building-calorie-counter">
@@ -499,7 +500,7 @@
             <input value="" type="number" name="decimal number input" id="number-input" class="number-input" />
             <button class="converter-btn" id="converter-btn">Convert</button>
         </div>
-        <output id="result" for="number-input"></output>
+        <output id="result-bc" for="number-input"></output>
         <div id="animation-container"></div>
         <script src="./script/Building Decimal to Binary Converter/script.js"></script>
     </div>
@@ -695,12 +696,33 @@
     <hr>
 
     <!-- BUILDING A SPREADSHEET -->
-    
+
     <div id="new-html">
         <h1><a href="./new.html">SPREADSHEET</a></h1>
     </div>
 
     <hr>
+
+    <!-- BUILDING A SPAM FILTER -->
+
+    <div id="building-spam-filter">
+        <div class="main-text">
+            <h1 class="title">Is this Spam?</h1>
+            <p class="description">
+                Enter a phrase to check if it would be marked as spam or not.
+            </p>
+        </div>
+        <div class="main">
+            <label class="message-label" for="message-input">Message: </label>
+            <textarea placeholder="Enter message here" value="" type="text" name="message" id="message-input" rows="10"
+                cols="40"></textarea>
+            <button class="btn" id="check-message-btn" type="button">
+                Check message
+            </button>
+            <p id="result"></p>
+        </div>
+        <script src="./script/Building a Spam Filter/script.js"></script>
+    </div>
     <footer></footer>
 </body>
 

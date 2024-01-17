@@ -1,0 +1,70 @@
+body {
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body a {
+  color: #f5f6f7;
+}
+body h1 {
+  text-align: center;
+}
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body footer {
+  margin-top: 300px;
+}
+
+body #building-spam-filter {
+  text-align: center;
+}
+body #building-spam-filter *,
+body #building-spam-filter *::before,
+body #building-spam-filter *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body #building-spam-filter .main-text {
+  margin: 25px 0;
+}
+body #building-spam-filter .main-text .title {
+  font-size: 2.5rem;
+}
+body #building-spam-filter .main-text .description {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+body #building-spam-filter .main .message-label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+body #building-spam-filter .main #message-input {
+  max-width: 90%;
+  font-size: 1.1rem;
+}
+body #building-spam-filter .main #message-inputplaceholder-shown {
+  text-align: center;
+}
+body #building-spam-filter .main .btn {
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  margin: 10px auto;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(light-yellow, #ffac33);
+  border-color: #feac32;
+  border-width: 3px;
+}
+body #building-spam-filter .main .btn:hover {
+  background-image: linear-gradient(#f1be32, #f89808);
+}
+body #building-spam-filter .main #result {
+  font-size: 2rem;
+  margin: 20px 0;
+}/*# sourceMappingURL=index.css.map */
