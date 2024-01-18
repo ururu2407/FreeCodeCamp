@@ -1,0 +1,99 @@
+body {
+  background-color: #0a0a23;
+  color: #f5f6f7;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body a {
+  color: #f5f6f7;
+}
+body h1 {
+  text-align: center;
+}
+body hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body footer {
+  margin-top: 300px;
+}
+
+body #build-telephone-number-validator {
+  align-items: center;
+}
+body #build-telephone-number-validator * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body #build-telephone-number-validator .phone-container {
+  color: black;
+  width: 250px;
+  margin: 30px auto;
+  position: relative;
+  background-color: black;
+  padding: 15px;
+  height: 460px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #build-telephone-number-validator .phone-container .phone-camera {
+  background-color: #dfdfe2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+body #build-telephone-number-validator .phone-container .phone-main {
+  background-color: #dfdfe2;
+  height: 365px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body #build-telephone-number-validator .phone-container .phone-main label {
+  font-size: 18px;
+  margin: 10px auto 5px;
+}
+body #build-telephone-number-validator .phone-container .phone-main #user-input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 42px;
+  font-size: 16px;
+}
+body #build-telephone-number-validator .phone-container .phone-main #results-div {
+  overflow-y: auto;
+  height: 265px;
+  width: 100%;
+}
+body #build-telephone-number-validator .phone-container .phone-main #results-div .results-text {
+  font-size: 22px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 0;
+}
+body #build-telephone-number-validator .phone-container .phone-footer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #build-telephone-number-validator .phone-container .phone-footer .btn-styles {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: #0a0a23;
+  font-size: 18px;
+  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff, #928d86);
+  border-color: #ffffff;
+  border-width: 3px;
+}/*# sourceMappingURL=index.css.map */

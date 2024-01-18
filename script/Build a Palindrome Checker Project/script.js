@@ -1,5 +1,5 @@
 const inputText = document.getElementById('text-input');
-const buttonCheck = document.getElementById('check-btn');
+const buttonCheck = document.getElementById('check-btn-pld');
 const resultPLD = document.getElementById('pld-result');
 
 const checkPalindrome = (input) => {

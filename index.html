@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./style/Buildding a Statistics Calculator/index.css">
     <link rel="stylesheet" href="./style/Building a Spreadsheet/index.css">
     <link rel="stylesheet" href="./style/Building a Spam Filter/index.css">
+    <link rel="stylesheet" href="./style/Build a Telephone Number Validator/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet" />
     <title>FreeCodeCamp</title>
@@ -259,7 +260,7 @@
                 <label for="text">Enter in text to check for a palindrome:
                 </label>
                 <input class="input-pld" id="text-input" value="" type="text" />
-                <button class="btn-pld" id="check-btn">Check</button>
+                <button class="btn-pld" id="check-btn-pld">Check</button>
                 <div class="results" id="pld-result">
                 </div>
             </div>
@@ -722,6 +723,27 @@
             <p id="result"></p>
         </div>
         <script src="./script/Building a Spam Filter/script.js"></script>
+    </div>
+
+    <hr>
+
+    <!-- BUILD A TELEPHONE NUMBER VALIDATOR PROJECT -->
+
+    <div id="build-telephone-number-validator">
+        <h1>Telephone Number Validator</h1>
+        <div class="phone-container">
+            <div class="phone-camera"></div>
+            <div class="phone-main">
+                <label for="user-input">Enter a Phone Number:</label>
+                <input maxlength="20" type="text" id="user-input" value="" />
+                <div id="results-div"></div>
+            </div>
+            <div class="phone-footer">
+                <button class="btn-styles" id="check-btn">Check</button>
+                <button class="btn-styles" id="clear-btn">Clear</button>
+            </div>
+        </div>
+        <script src="./script/Build a Telephone Number Validator/script.js"></script>
     </div>
     <footer></footer>
 </body>
