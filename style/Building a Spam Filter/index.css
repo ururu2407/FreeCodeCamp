@@ -62,7 +62,7 @@ body #building-spam-filter .main .btn {
   border-width: 3px;
 }
 body #building-spam-filter .main .btn:hover {
-  background-image: linear-gradient(#f1be32, #f89808);
+  background-image: linear-gradient(#ffcc4c, #f89808);
 }
 body #building-spam-filter .main #result {
   font-size: 2rem;

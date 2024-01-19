@@ -46,7 +46,7 @@ body #building-decimal-to-binary .dcm-input-container .number-input {
   height: 25px;
 }
 body #building-decimal-to-binary .dcm-input-container .converter-btn {
-  background-color: #f1be32;
+  background-color: #ffcc4c;
   cursor: pointer;
   border: none;
   padding: 4px;
@@ -59,7 +59,7 @@ body #building-decimal-to-binary #result {
   min-height: 80px;
   word-break: break-word;
   padding: 15px;
-  border: 5px solid #f1be32;
+  border: 5px solid #ffcc4c;
   font-size: 2rem;
   text-align: center;
 }
@@ -68,7 +68,7 @@ body #building-decimal-to-binary #animation-container {
 }
 body #building-decimal-to-binary #animation-container .animation-frame {
   padding: 15px 10px;
-  border: 5px solid #f1be32;
+  border: 5px solid #ffcc4c;
   font-size: 1.2rem;
   text-align: center;
 }
